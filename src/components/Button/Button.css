@@ -1,0 +1,75 @@
+.btn {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  background: #2575fc;
+  color: #ffffff;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #2575fc 0, #00bfe7 65%, #2575fc);
+  background-size: 150% 100%;
+  transition: all 0.4s;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #2575fc 0, #00bfe7 65%, #2575fc);
+  background-position: 100% 0;
+  background-size: 150% 100%;
+}
+
+.btn-primary:active {
+  background: linear-gradient(90deg, #2575fc 0, #00bfe7 65%, #2575fc);
+  background-size: 150% 100%;
+}
+
+.btn-secondary {
+  background: linear-gradient(90deg, #d900aa 0, #ff63dd 65%, #d900aa);
+  background-size: 150% 100%;
+  transition: all 0.4s;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(90deg, #d900aa 0, #ff63dd 65%, #d900aa);
+  background-position: 100% 0;
+  background-size: 150% 100%;
+}
+
+.btn-secondary:active {
+  background: linear-gradient(90deg, #d900aa 0, #ff63dd 65%, #d900aa);
+  background-size: 150% 100%;
+}
+
+.btn-danger {
+  background: #ff4d4f;
+  background-size: 150% 100%;
+  transition: all 0.4s;
+}
+
+.btn-danger:hover {
+  background: #ff7875;
+}
+
+.btn-danger:active {
+  background: #ff4d4f;
+}
+
+.btn-small {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-large {
+  padding: 15px 25px;
+  font-size: 18px;
+}

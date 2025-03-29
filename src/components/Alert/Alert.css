@@ -1,0 +1,96 @@
+.alert {
+  position: absolute;
+  padding: 15px 20px;
+  border-radius: 6px;
+  margin-top: 30px;
+  width: 50%;
+  border: 1px solid #b3b3b3;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  animation: slideDown 0.5s ease-in-out forwards;
+  font-size: 16px;
+  font-weight: 500;
+  color: #155724;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alert-success {
+  background-color: #e6ffeb;
+  border: 1px solid #bbcfc0;
+}
+
+.alert-info {
+  background-color: #d6e7ff;
+  border: 1px solid #bbc2cf;
+}
+
+.alert-warning {
+  background-color: #fff6d6;
+  border: 1px solid #cfcdbb;
+}
+
+.alert-error {
+  background-color: #ffdcdf;
+  border: 1px solid #ff8aa4;
+}
+
+.alertContent {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.alertIcon {
+  width: 22px;
+  height: 22px;
+}
+
+.closeLogo {
+  width: 17px;
+  height: 17px;
+}
+
+.closeButton {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  width: 17px;
+  height: 17px;
+}
+
+.slideup {
+  animation: slideUp 0.5s ease-in-out forwards;
+}
+
+@keyframes slideUp {
+  from {
+    top: 30px;
+    opacity: 1;
+  }
+  to {
+    top: -100px;
+    opacity: 0;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+  to {
+    top: 30px;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .alert {
+    width: 80%;
+  }
+}
