@@ -17,6 +17,7 @@ import CardContent, {
 import CardFooter, {
   CardFooterProps,
 } from "./components/Card/CardComponent/CardFooter";
+import Input, { InputProps } from "./components/Input/Input";
 
 export {
   Button,
@@ -28,6 +29,7 @@ export {
   CardDescription,
   CardContent,
   CardFooter,
+  Input,
 };
 export type {
   ButtonProps,
@@ -39,4 +41,5 @@ export type {
   CardDescriptionProps,
   CardContentProps,
   CardFooterProps,
+  InputProps,
 };

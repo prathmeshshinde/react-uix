@@ -31,6 +31,9 @@ export default App;
 
 - **type**: `primary` | `secondary` | `danger`
 - **size**: `small` | `default` | `large`
+- **htmlType**: `button` | `submit` | `reset`
+- **className**: string;
+- **onClick**: function (Callback function triggered on button click);
 
 ### Alert Component
 
@@ -97,9 +100,37 @@ export default App;
 
 - **className**: string (pass a className and change the styling)
 
+### Input Component
+
+```tsx
+import React from "react";
+import { Input } from "react-uix";
+
+const App = () => (
+  <Input
+    type="text"
+    placeholder="Enter your name"
+    value="joe"
+    onChange={(value) => console.log(value)}
+  />
+);
+
+export default App;
+```
+
+#### Input Props
+
+- **type**: `text` | `password` | `email` | `number` (Specifies the type of input)
+- **placeholder**: string (Placeholder text for the input field)
+- **value**: string (The current value of the input field)
+- **onChange**: function (Callback function triggered when the input value changes)
+- **className**: string
+- **defaultValue**: string (The default value of the input field)
+
 ## Components
 
 - **Button**: A customizable button component.
 - **Alert**: A dismissible alert component.
 - **Badge**: A badge component for displaying status or counts.
 - **Card**: A card component for displaying content in a bordered container.
+- **Input**: A flexible input field component.
